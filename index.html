@@ -1,0 +1,547 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nom Nom House</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background: #ffffff;
+    color: #222;
+}
+
+
+/* HEADER */
+
+header {
+    background: #111;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+}
+
+
+.logo img {
+    width: 130px;
+}
+
+
+/* NAVIGATION */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 18px;
+}
+
+
+nav a:hover {
+    color: #f15a24;
+}
+
+
+
+/* HERO SECTION */
+
+.hero {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 70px 8%;
+
+    background:
+    linear-gradient(
+    rgba(255,255,255,.9),
+    rgba(255,255,255,.9)
+    ),
+    url("foodhero.jpg");
+
+    background-size: cover;
+}
+
+
+.hero-text {
+
+    width: 50%;
+
+}
+
+
+.hero-text h3 {
+
+    color:#f15a24;
+    font-size:28px;
+
+}
+
+
+.hero-text h1 {
+
+    font-size:55px;
+    margin:20px 0;
+
+}
+
+
+
+.hero-text p {
+
+    font-size:20px;
+    color:#555;
+
+}
+
+
+
+button {
+
+    margin-top:30px;
+    background:#f15a24;
+    border:none;
+    color:white;
+
+    padding:15px 35px;
+
+    font-size:18px;
+    border-radius:8px;
+
+}
+
+
+.hero img {
+
+    width:450px;
+    border-radius:20px;
+
+}
+
+
+
+
+
+/* FEATURE SECTION */
+
+
+.featured {
+
+    padding:60px 8%;
+    text-align:center;
+
+}
+
+
+.featured h2 {
+
+    font-size:35px;
+
+}
+
+
+.cards {
+
+    display:flex;
+    gap:25px;
+
+    margin-top:40px;
+
+    justify-content:center;
+
+}
+
+
+.card {
+
+    width:220px;
+
+    background:white;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px #ccc;
+
+    overflow:hidden;
+
+}
+
+
+.card img {
+
+    width:100%;
+    height:180px;
+
+    object-fit:cover;
+
+}
+
+
+.card h3 {
+
+    margin:15px;
+
+}
+
+
+.card p {
+
+    padding:0 15px 20px;
+
+    color:#555;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer {
+
+    background:#111;
+
+    color:white;
+
+    padding:40px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+
+footer h3 {
+
+    color:#f15a24;
+
+    margin-bottom:15px;
+
+}
+
+
+footer p {
+
+    color:#ddd;
+
+}
+
+
+
+.bottom {
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:15px;
+
+}
+
+
+
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+
+header {
+
+    flex-direction:column;
+    height:auto;
+
+}
+
+
+nav {
+
+    margin-top:20px;
+
+}
+
+
+.hero {
+
+    flex-direction:column;
+
+}
+
+
+.hero-text {
+
+    width:100%;
+
+}
+
+
+.hero img {
+
+    margin-top:30px;
+    width:90%;
+
+}
+
+
+.cards {
+
+    flex-wrap:wrap;
+
+}
+
+
+footer {
+
+    flex-direction:column;
+    gap:30px;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<div class="logo">
+
+<img src="images/SampleLogo (1).png" alt="Nom Nom House Logo">
+
+</div>
+
+
+<nav>
+
+<a href="#">HOME</a>
+<a href="#">ABOUT</a>
+<a href="#">MENU</a>
+<a href="#">GALLERY</a>
+<a href="#">CONTACT</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<section class="hero">
+
+
+<div class="hero-text">
+
+<h3>WELCOME TO</h3>
+
+<h1>NOM NOM HOUSE</h1>
+
+<p>
+Delicious food made with love.<br>
+Good food, good mood!
+</p>
+
+
+<button>
+VIEW MENU
+</button>
+
+
+</div>
+
+
+<img src="images/chicken.jpg" alt="Food">
+
+
+</section>
+
+
+
+
+
+
+
+<section class="featured">
+
+
+<h2>
+OUR FEATURED DISHES
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<img src="images/pancakes.jpg">
+
+<h3>Pancakes</h3>
+
+<p>
+Fluffy pancakes served with syrup and butter.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="images/grilled cheese.jpg">
+
+<h3>Grilled Cheese</h3>
+
+<p>
+A classic grilled cheese sandwich with melted cheese.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="images/fish sticks.jpg">
+
+<h3>Fish Sticks</h3>
+
+<p>
+Crispy fish sticks served with tartar sauce.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="images/chicken.jpg">
+
+<h3>Grilled Chicken</h3>
+
+<p>
+chicken breast grilled to perfection with herbs.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<img src="images/corndog.jpg">
+
+<h3>Corndog</h3>
+
+<p>
+A delicious corn dog on a stick.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+
+<div>
+
+<h3>ABOUT US</h3>
+
+<p>
+At Nom Nom House, we serve delicious meals made from the freshest ingredients.
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>QUICK LINKS</h3>
+
+<p>
+Home<br>
+About<br>
+Menu<br>
+Gallery<br>
+Contact
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>FOLLOW US</h3>
+
+<p>
+Facebook | Instagram | Twitter
+</p>
+
+</div>
+
+
+</footer>
+
+
+
+<div class="bottom">
+
+Â© 2026 Nom Nom House. All Rights Reserved.
+
+</div>
+
+
+
+
+</body>
+
+</html>
